@@ -1,6 +1,6 @@
 ---
 title: "Mastering PHP Autoloading: Streamline Class Loading in Your Projects"
-date: 2023-06-14T15:25:00+02:00
+date: 2025-01-22T05:31:00+02:00
 tags: ["All", "PHP", "Programming"]
 categories: ["All", "Programming"]
 author: "Siyabonga Konile"
