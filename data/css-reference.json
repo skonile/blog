@@ -1,0 +1,8 @@
+{
+    "content": [
+        {
+            "term": "*{}",
+            "description": "Selector for selecting every element in the DOM."
+        }
+    ]
+}

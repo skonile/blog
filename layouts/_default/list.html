@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<div class="main-content-inner">
+    {{ $paginator := .Paginate (where .Site.RegularPages "Section" "blogs") }}
+    {{ range $paginator.Pages }}
+        {{ partial "blog-post-item" . }}
+    {{ end }}
+</div>
+
+<div class="pagination-cont">
+    <div class="pagination-cont-inner">
+        {{ template "_internal/pagination.html" . }}
+    </div>
+</div>
+
+
+{{ end }}

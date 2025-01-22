@@ -1,0 +1,26 @@
+<div class="blog-item">
+    <div class="blog-item-img-date-cont">
+        <a href="{{ .Permalink }}">
+            <div class="blog-item-img-cont">
+                <img src="{{ .Site.BaseURL }}/img/blog/{{ .Params.blogImage }}">
+            </div>
+            <div class="blog-item-date-cont">
+                <div class="blog-item-date-cont">
+                    <p class="blog-item-date">{{ .Date | time.Format ":date_medium" }}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="blog-item-text-cont">
+        <div class="blog-item-heading-cont">
+            <h3 class="blog-item-heading">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h3>
+        </div>
+        <div class="blog-item-lead-cont">
+            <p class="blog-item-lead">
+                {{ truncate 170 .Content }}
+            </p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+{{ define "aside" }}
+{{ partial "aside-blogs" . }}
+{{ partial "aside-about" . }}
+{{ end }}
+
+{{ define "main" }}
+<div class="main-content-inner">
+    <article class="blog-post">
+        <div class="blog-post-img-cont">
+            <figure>
+                <img src="{{ .Site.BaseURL }}/img/blog/{{ .Params.blogImage }}">
+            </figure>
+        </div>
+
+        <div class="blog-author-date">
+            <div class="blog-author-cont">
+                <span class="las la-pen blog-author-icon"></span> {{ .Params.author }}
+            </div>
+            <div class="blog-date-cont">
+                <span class="las la-clock blog-date-icon"></span> {{ .Date | time.Format ":date_medium" }}
+            </div>
+        </div>
+
+        {{ .Content }}
+    </article>
+</div>
+
+<div class="comments" id="comments">
+    {{ template "_internal/disqus.html" . }}
+</div>
+{{ end }}

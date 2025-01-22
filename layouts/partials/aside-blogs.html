@@ -1,0 +1,15 @@
+<div class="aside-section">
+    <div class="aside-section-heading">
+        <h3 class="aside-heading">
+            Latest Blogs
+        </h3>
+    </div>
+    <div class="aside-blogs-text-cont">
+        <ul>
+            {{ $blogs := (where .Site.RegularPages "Section" "blogs") }}
+            {{ range first 5 $blogs }}
+                <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+            {{ end }}
+        </ul>
+    </div>
+</div>

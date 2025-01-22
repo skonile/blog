@@ -1,0 +1,39 @@
+{{ define "main" }}
+<div class="contact-cont">
+    <div class="contact-inner">
+        <div class="contact-form-cont">
+            <div class="contact-form">
+                <div class="contact-text">
+                    <h2 class="contact-heading">Get in touch with me!</h2>
+                    <p class="contact-p">
+                        I would love to hear from you! If you have any questions, 
+                        comments, or feedback, please don't hesitate to reach out to me.
+                    </p>
+                </div>
+                <form action="https://public.herotofu.com/v1/873289f0-d782-11ed-a62e-917cebf1b719" method="post" accept-charset="UTF-8">
+                    <div class="form-row">
+                        <div class="form-full">
+                            <input type="text" name="fullname" id="contact-fullname" class="contact-fullname" placeholder="Fullname" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-full">
+                            <input type="email" name="email" id="contact-email" class="contact-email" placeholder="Email Address" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-full">
+                            <textarea name="message" id="contact-message" placeholder="Message" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-full">
+                            <input type="submit" name="contact-submit" id="contact-submit" value="SEND MESSAGE">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

@@ -1,0 +1,7 @@
+baseURL = 'https://siyabongakonile.github.io/blog'
+languageCode = 'en-us'
+title = 'Siyabonga Konile`s Blog'
+disqusShortname = 'hugo-blog-github'
+paginate = 3
+perPage = 3
+

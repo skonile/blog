@@ -1,0 +1,39 @@
+{{ define "page-header" }}
+<!-- Start of Hero Section -->
+<div class="hero-section">
+    <div class="hero-text">
+        <h1 class="hero-heading">
+            I'm Siyabonga Konile and I write about web technologies
+        </h1>
+        <p class="hero-lead">
+            As a web developer, I'm constantly learning and improving my skills. 
+            I enjoy sharing my journey through my blog, where I write about my 
+            experiences and the latest technologies I'm working with. 
+            From front-end design to back-end development, my goal is to 
+            provide valuable insights and resources for other developers who are also on their learning journey.
+        </p>
+    </div>
+    <div class="hero-blogs-btn-cont">
+        <a href="#home-blogs">
+            <div class="hero-blogs-btn">
+                <span class="las la-angle-double-down hero-blogs-btn-icon"></span>
+            </div>
+        </a>
+        
+    </div>
+</div>
+<!-- End of Hero Section -->
+{{ end }}
+
+{{ define "main" }}
+<div class="main-content-inner" id="home-blogs">
+    {{ $blogs := .Site.GetPage "blogs" }}
+    {{ range first 9 $blogs.RegularPagesRecursive}}
+        {{ partial "blog-post-item" . }}
+    {{ end }}
+</div>
+
+<div class="load-more-btn-cont">
+    <a href="blogs" class="btn btn-round btn-white">Load More</a>
+</div>
+{{ end }}

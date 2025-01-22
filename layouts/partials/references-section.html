@@ -1,0 +1,21 @@
+<!-- Start of Reference Section -->
+<div class="references-section">
+    <div class="references-section-inner container">
+        {{ $references := .Site.GetPage "references" }}
+        {{ range first 3 $references.RegularPages}}
+        <div class="reference-item">
+            <div class="reference-item-heading-cont">
+                <h3 class="reference-item-heading">
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </h3>
+            </div>
+            <div class="reference-item-text-cont">
+                <p class="reference-item-text">
+                    {{ truncate 250 .Content }}
+                </p>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+<!-- End of Reference Section -->

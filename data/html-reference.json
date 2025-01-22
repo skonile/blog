@@ -1,0 +1,22 @@
+{
+    "content": 
+    [
+        {
+            "term": "DOCTYPE",
+            "description": "The <!DOCTYPE html> is the first line in your html page that tells the browsers/clients that you are using html5."
+        },
+        {
+            "term": "html",
+            "description": "The root html tag that all other elements are children of.",
+            "link": "/blog/"
+        },
+        {
+            "term": "head",
+            "description": "The <head> tag is an HTML element that contains child elements used to provide metadata and other non-visible information about a webpage."
+        },
+        {
+            "term": "body",
+            "description": "The <body> tag is an HTML element that contains child elements that are visible to the user/client."
+        }
+    ]
+}

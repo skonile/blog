@@ -1,0 +1,60 @@
+<!-- Start of Horizontal Header/Navigation -->
+<header class="main-header {{ if eq .Permalink .Site.BaseURL }}main-header-home{{ end }}">
+    <div class="logo-cont">
+        <a href="{{ .Site.BaseURL }}">
+            <img src="{{ .Site.BaseURL }}/img/logo/sk.png" alt="LOGO" class="logo">
+        </a>
+    </div>
+
+    <div class="mobile-nav-icon-cont">
+        <div class="mobile-nav-icon" id="mobile-nav-icon">
+            <span class="las la-bars"></span>
+        </div>
+    </div>
+
+    <nav class="hnav" id="hnav">
+        <div class="hnav-close-btn-cont">
+            <div class="hnav-close-btn" id="hnav-close-btn">
+                <span class="la la-times"></span>
+            </div>
+        </div>
+
+        <div class="hnav-links">
+            <ul class="hnav-links-inner">
+                <li class="hnav-link-cont">
+                    <a href="{{ .Site.BaseURL }}" class="hnav-link">Home</a>
+                </li>
+                <li class="hnav-link-cont">
+                    <a href="{{ .Site.BaseURL }}/blogs/" class="hnav-link">Blog</a>
+                </li>
+                <li class="hnav-link-cont">
+                    <a href="{{ .Site.BaseURL }}/about/" class="hnav-link">About</a>
+                </li>
+                <li class="hnav-link-cont">
+                    <a href="{{ .Site.BaseURL }}/contact/" class="hnav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="hnav-social">
+            <ul class="hnav-social-inner">
+                <li class="hnav-link-cont">
+                    <a href="https://www.linkedin.com/in/siyabongakonile/" target="_blank" class="hnav-link">
+                        <span class="lab la-linkedin-in"></span>
+                    </a>
+                </li>
+                <li class="hnav-link-cont">
+                    <a href="https://github.com/siyabongakonile/" target="_blank" class="hnav-link">
+                        <span class="lab la-github-alt"></span>
+                    </a>
+                </li>
+                <li class="hnav-link-cont">
+                    <a href="https://www.facebook.com/profile.php?id=100069815064961" target="_blank" class="hnav-link">
+                        <span class="lab la-facebook-f"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<!-- End of Horizontal Header/Navigation -->

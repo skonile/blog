@@ -1,0 +1,28 @@
+{
+    "content": [
+        {
+            "term": "<?php",
+            "description": "Opening tag for PHP code."
+        },
+        {
+            "term": "?>",
+            "description": "closing tag for PHP code."
+        },
+        {
+            "term": "// comment",
+            "description": "Marks a single line comment."
+        },
+        {
+            "term": "# comment",
+            "description": "Marks a single line comment."
+        },
+        {
+            "term": "/* comment */",
+            "description": "Marks a multi-line comment with the comment text being the comment."
+        },
+        {
+            "term": "/** Comment */",
+            "description": "Marks a DocBlock comment. PHP DocBlocks are normal php comment than can include phpDoc tags."
+        }
+    ]
+}
